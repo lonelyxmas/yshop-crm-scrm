@@ -137,6 +137,9 @@ public class CrmCustomerServiceImpl implements CrmCustomerService {
     @Transactional(rollbackFor = Exception.class)
     public void receiveCustomer(Long id) {
         CrmCustomerDO customerDO = customerMapper.selectById(id);
+        if(customerDO.getOwnerUserId() > 0){
+            throw exception(new ErrorCode(202603131, "客户已领取"));
+        }
         if(customerDO == null){
             throw exception(CUSTOMER_NOT_EXISTS);
         }
