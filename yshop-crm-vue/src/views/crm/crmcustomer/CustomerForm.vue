@@ -47,6 +47,10 @@
           <el-form-item label="客户行业" prop="industry">
             <el-select v-model="formData.industry" clearable placeholder="请选择客户行业">
               <el-option
+                  label="请选择客户行业"
+                  :value="0"
+                />
+              <el-option
                   v-for="dict in getIntDictOptions(DICT_TYPE.CRM_CUSTOMER_INDUSTRY)"
                   :key="dict.value"
                   :label="dict.label"

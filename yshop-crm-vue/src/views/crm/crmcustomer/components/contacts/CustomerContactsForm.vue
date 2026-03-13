@@ -24,7 +24,7 @@
           v-model="formData.birthday"
           type="date"
           value-format="x"
-          placeholder="选择下次联系时间"
+          placeholder="选择生日时间"
         />
       </el-form-item>
       <el-form-item label="微信号" prop="wechat">
