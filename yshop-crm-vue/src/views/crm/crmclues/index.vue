@@ -117,7 +117,7 @@
       <el-table-column label="线索名称" align="center" prop="name" width="150"  />
       <el-table-column label="客户手机" align="center" prop="mobile" width="120" />
       <el-table-column label="客户电话" align="center" prop="telephone" width="120" />
-      <el-table-column label="客户级别" align="center" prop="level">
+      <el-table-column label="客户级别" align="center" prop="level" width="120">
         <template #default="scope">
           <dict-tag :type="DICT_TYPE.CRM_CUSTOMER_LEVEL" :value="scope.row.level" />
         </template>

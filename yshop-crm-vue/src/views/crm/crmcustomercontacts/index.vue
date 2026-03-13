@@ -17,7 +17,7 @@
       :inline="true"
       label-width="68px"
     >
-      <el-form-item label="客户" prop="customerId">
+      <el-form-item label="客户" prop="customerName">
         <el-input
           v-model="queryParams.customerName"
           placeholder="请输入客户"
